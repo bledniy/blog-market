@@ -34,9 +34,9 @@ Use the [Aimeos Laravel package](https://github.com/aimeos/aimeos-laravel) direc
 ## Requirements
 
 The Aimeos shop distribution requires:
-- Linux/Unix, WAMP/XAMP or MacOS environment
+- Linus/Unix or WAMP/XAMP environment
 - PHP >= 7.2
-- MySQL >= 5.7.8, MariaDB >= 10.2.2
+- MySQL >= 5.7
 - Web server (Apache, Nginx or integrated PHP web server for testing)
 
 If required PHP extensions are missing, `composer` will tell you about the missing
@@ -58,14 +58,6 @@ installation. Simply execute the following command to start the web server:
 ```
 cd myshop
 php artisan serve
-```
-
-**Note:** In an hosting environment, the document root of your virtual host must point to
-the **/.../myshop/public/** directory and you have to change the `APP_URL` setting in your `.env`
-file to your domain without port, e.g.:
-
-```
-APP_URL=http://myhostingdomain.com
 ```
 
 ## Frontend
